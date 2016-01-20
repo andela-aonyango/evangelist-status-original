@@ -11,5 +11,7 @@
             "name": "andrew",
             "email": "andrew.onyango@andela.com"
         }
-    ]
+    ],
+    "minimum-stability": "alpha",
+    "prefer-stable": true
 }
