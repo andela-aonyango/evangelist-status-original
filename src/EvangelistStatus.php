@@ -12,7 +12,7 @@ class EvangelistStatus
     private function setStatus($username)
     {
         $url = 'https://api.github.com/users/';
-        $json = $this->get_github_info($url . $username);
+        $json = $this->getGithubInfo($url . $username);
         $obj = json_decode($json);
         $repos = $obj->{'public_repos'};
 
@@ -35,7 +35,7 @@ class EvangelistStatus
         return $this->status;
     }
 
-    private function get_github_info($url) {
+    private function getGithubInfo($url) {
         $curl_handle = curl_init();
         curl_setopt($curl_handle, CURLOPT_URL, $url);
         curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1); 
@@ -45,5 +45,4 @@ class EvangelistStatus
         curl_close($curl_handle);
         return $content;
     }
-
 }
