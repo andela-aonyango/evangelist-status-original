@@ -1,0 +1,16 @@
+{
+    "name": "andrew/evangelist_status",
+    "description": "A package which allows the user to request the evangelist status of a developer based on the number of public repos. (Input -> Github username, Output -> Evangelist status)",
+    "type": "library",
+    "require": {
+        "php": ">=5.6"
+    },
+    "license": "CC0",
+    "authors": [
+        {
+            "name": "andrew",
+            "email": "andrew.onyango@andela.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
